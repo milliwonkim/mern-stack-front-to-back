@@ -1,3 +1,8 @@
+- chapter 6
+1. update
+- server.js
+
+2. 
 ![](images/install-dependencies-and-basic-server-setup-1.png)
 ![](images/install-dependencies-and-basic-server-setup-2.png)
 ![](images/install-dependencies-and-basic-server-setup-3.png)
