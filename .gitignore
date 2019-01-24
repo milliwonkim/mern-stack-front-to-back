@@ -1,0 +1,5 @@
+#'.gitignore' tells what not to push to our repository 
+#and we definitely don't want the node_modules folder
+
+/node_modules
+package-lock.json
