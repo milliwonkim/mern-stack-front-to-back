@@ -1,4 +1,8 @@
-
+- chapter 13
+1. update
+- server.js
+- passport.js
+- users.js
 
 2.
 ![](images/passport-jwt-authentication-strategy-1.png)
