@@ -23,3 +23,6 @@ the user is now in req.user
 ![](images/passport-jwt-authentication-strategy-8.png)
 - then we tried to access a protected row. we first did it without the token you it was unauthorized</br>
 then we added the correct token. and now it's responding with the user
+- now i'm not gonna keep this as our response because we don't wanna send like the password even though it's a hash</br>
+we don't wanna send this back 
+![](images/passport-jwt-authentication-strategy-9.png)
