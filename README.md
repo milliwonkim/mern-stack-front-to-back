@@ -37,3 +37,10 @@ which is what we want because those are not required
 ![](images/profile-field-validations-15.png)
 - now there' 2 users Brad and John Doe. we didn't create a profile for Brad so Brad doesn't have a profile</br>
 so if we look in profiles there's only one document of John Doe
+</br>------------------------------------------------------------------------------------------
+![](images/profile-field-validations-16.png)
+![](images/profile-field-validations-17.png)
+- we don't have avatar and you don't see the name or the e-mail. actually we don't want the e-mail to show on the profile because these are gonna be public. but we do want the avatar in the name
+- so what we have to do is go to get route and findOne and use populate() method
+![](images/profile-field-validations-18.png)
+- if we re-fetch our profile, then we have name and avatar
