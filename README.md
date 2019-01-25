@@ -26,3 +26,14 @@ which is what we want because those are not required
 - it gets added to the social object
 ![](images/profile-field-validations-10.png)
 - facebook also put into the social object because that's how we constructed it in our model
+</br>------------------------------------------------------------------------------------------
+![](images/profile-field-validations-11.png)
+- if we have a checking to get our profile data because before we didn't have one 
+![](images/profile-field-validations-12.png)
+- if we send, we can get our profile
+![](images/profile-field-validations-13.png)
+- if you wanna look at MongoDB, we have 2 collections now users and profiles
+![](images/profile-field-validations-14.png)
+![](images/profile-field-validations-15.png)
+- now there' 2 users Brad and John Doe. we didn't create a profile for Brad so Brad doesn't have a profile</br>
+so if we look in profiles there's only one document of John Doe
