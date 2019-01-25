@@ -1,4 +1,7 @@
-
+- chapter 20
+1. update
+- profile.js(validation folder)
+- profile.js(route/api folder)
 
 2.
 ![](images/profile-field-validations-1.png)
