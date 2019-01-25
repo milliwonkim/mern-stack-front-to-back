@@ -1,4 +1,6 @@
-
+- chapter 18
+1. update
+- profile.js(route/api folder)
 
 2. 
 ![](images/current-user-profile-route-1.png)
