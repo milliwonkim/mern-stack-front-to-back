@@ -1,3 +1,3 @@
 - chapter 17
 1. update
-- Profile.js
+- Profile.js(models folder)
