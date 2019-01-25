@@ -5,4 +5,4 @@
 - is-empty.js(validation folder)
 - users.js(route/api folder)
 2.
-![](images/validation-handlers-1.png)
+![](images/validation-handlers-1-1.png)
