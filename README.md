@@ -17,3 +17,24 @@
 </br>-----------------------------------------------------------------------
 ![](images/add-experience-and-education-routes-6.png)
 ![](images/add-experience-and-education-routes-7.png)
+
+3.
+i fixed the problem thanks to Christopher</br>
+
+i switched from 'techguyinfo@gmail.com' to 'john@gmail.com'</br>
+
+and then take new token and do 'POST' both(/experience, /education)</br>
+
+after that, i got results as the instructor had.</br>
+
+this is based on what i typed has no error</br>
+</br>
+
+
+Christopher · 3달 전
+
+Hi Guys, I had the same issue and it's a pretty simple solution.  This is a Facepalm worthy one.
+
+
+
+You have to login as a user that has a profile.  If you're logged in as a user with no profile, profile returns NULL.
