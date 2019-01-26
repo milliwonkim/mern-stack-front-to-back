@@ -1,4 +1,8 @@
-
+- chapter 22
+1. update
+- profile.js(routes/api folder)
+- experience.js(validation folder)
+- educations.js(validation folder)
 
 2.
 ![](images/add-experience-and-education-routes-1.png)
