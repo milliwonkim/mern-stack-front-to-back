@@ -1,4 +1,7 @@
-
+- chapter 25
+1. update
+- posts.js (routes/api folder)
+- post.js(validation folder)
 
 2.
 ![](images/post-create-route-1.png)
