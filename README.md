@@ -1,4 +1,6 @@
-
+- chapter 23
+1. update
+- profile.js(routes/api folder)
 
 2.
 ![](images/delete-education-and-experience-routes-1.png)
