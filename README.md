@@ -1,4 +1,6 @@
-
+- chapter 26
+1. update
+- posts.js(routes/api folder)
 
 2.
 ![](images/get-and-delete-post-routes-1.png)
