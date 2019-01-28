@@ -52,6 +52,7 @@ so that it builds our static assets on their server instead of doing it locally 
 - you can see that it's actually serving our data for MongoDB through our backend
 </br>
 </br>
+</br>--------------------------------------------------------------------------
 events.js:167 [1] throw er; // Unhandled 'error' event
 Martin · 강의 54 · 11일 전
 Got this problem warning today, just because I changed the name of project folder, and I tried to changed it back or even download the project from tutor's devconnector_S9.zip and run but still has same issue, even though the project still worked fine.
@@ -138,6 +139,36 @@ npm run dev
 
 when doing this the error seems to crop up quite a few times, if this happens to yourself, try deleting node modules and running npm install again. this worked for me in this situation.
 
-
+</br>--------------------------------------------------------------------------
 
 Hopefully this was helpful in some way.
+
+The aforementioned killall -9 node, suggested by Patrick works as expected and solves the problem but you may want to read the edit part of this very answer about why kill -9 may not be the best way to do it.
+
+On top of that you might want to target a single process rather than blindly killing all active processes.
+
+In that case, first get the process ID (PID) of the process running on that port (say 8888):
+
+lsof -i tcp:8888
+
+This will return something like:
+
+COMMAND   PID    USER   FD   TYPE             DEVICE SIZE/OFF NODE NAME
+node     57385   You   11u  IPv6 0xac745b2749fd2be3      0t0  TCP *:ddi-tcp-1 (LISTEN)
+Then just do (ps - actually do not. Please keep reading below):
+
+kill -9 57385
+
+You can read a bit more about this here.
+
+EDIT: I was reading on a fairly related topic today and stumbled upon this interesting thread on why should i not kill -9 a process.
+
+Generally, you should use kill -15 before kill -9 to give the target process a chance to clean up after itself. (Processes can't catch or ignore SIGKILL, but they can and often do catch SIGTERM.) If you don't give the process a chance to finish what it's doing and clean up, it may leave corrupted files (or other state) around that it won't be able to understand once restarted.
+
+So, as stated you should better kill the above process with:
+
+kill -15 57385
+
+EDIT 2: As noted in a comment around here many times this error is a consequence of not exiting a process gracefully. That means, a lot of people exit a node command (or any other) using CTRL+Z. The correct way of stopping a running process is issuing the CTRL+C command which performs a clean exit.
+
+Exiting a process the right way will free up that port while shutting down. This will allow you to restart the process without going through the trouble of killing it yourself before being able to re-run it again.
