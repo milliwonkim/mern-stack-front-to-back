@@ -36,6 +36,7 @@ so if you get error about nodemon which says address already in use :::5000, the
 </br>
 </br>
 </br>
+<code>
 Compiling...
 [0] [nodemon] restarting due to changes...
 [0] [nodemon] starting `node server.js`
@@ -103,3 +104,4 @@ Compiling...
 [0] (node:7348) DeprecationWarning: current URL string parser is deprecated, and will be removed in a future version. To use the new parser, pass option { useNewUrlParser: true } to MongoClient.connect.
 [0] Server running on port 5000
 [0] MongoDB Connected
+</code>
