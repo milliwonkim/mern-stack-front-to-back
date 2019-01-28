@@ -1,4 +1,4 @@
-- chapter 31
+- chapter 32
 1. update
 - Navbar.js(from outside landing.html in devconnector_theme )
 - Footer.js
