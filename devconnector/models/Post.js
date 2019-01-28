@@ -42,7 +42,7 @@ const PostSchema = new Schema({
         }
     ],
     /** comment also has user */
-    comment: [
+    comments: [
         {
             user: {
                 type: Schema.Types.ObjectId,
