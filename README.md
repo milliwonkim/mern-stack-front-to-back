@@ -50,3 +50,94 @@ so that it builds our static assets on their server instead of doing it locally 
 ![](images/implementing-react-14.png)
 ![](images/implementing-react-15.png)
 - you can see that it's actually serving our data for MongoDB through our backend
+</br>
+</br>
+events.js:167 [1] throw er; // Unhandled 'error' event
+Martin · 강의 54 · 11일 전
+Got this problem warning today, just because I changed the name of project folder, and I tried to changed it back or even download the project from tutor's devconnector_S9.zip and run but still has same issue, even though the project still worked fine.
+
+
+
+Another question post by others said add npm update serverless to package.json, but it show that warning when sth wrong. Since we installed nodemon when update sth new, it always showed....
+
+
+
+events.js:167
+
+[1]       throw er; // Unhandled 'error' event
+
+[1]       ^
+
+[1]
+
+[1] Error: listen EADDRINUSE :::5000
+
+[1]     at Server.setupListenHandle [as _listen2] (net.js:1286:14)
+
+[1]     at listenInCluster (net.js:1334:12)
+
+[1]     at Server.listen (net.js:1421:7)
+
+[1]     at Function.listen (/Users/xuanningmeng/Desktop/devconnector/node_modules/express/lib/application.js:618:24)
+
+[1]     at Object.<anonymous> (/Users/xuanningmeng/Desktop/devconnector/server.js:42:5)
+
+[1]     at Module._compile (internal/modules/cjs/loader.js:688:30)
+
+[1]     at Object.Module._extensions..js (internal/modules/cjs/loader.js:699:10)
+
+[1]     at Module.load (internal/modules/cjs/loader.js:598:32)
+
+[1]     at tryModuleLoad (internal/modules/cjs/loader.js:537:12)
+
+[1]     at Function.Module._load (internal/modules/cjs/loader.js:529:3)
+
+[1]     at Function.Module.runMain (internal/modules/cjs/loader.js:741:12)
+
+[1]     at startup (internal/bootstrap/node.js:285:19)
+
+[1]     at bootstrapNodeJSCore (internal/bootstrap/node.js:739:3)
+
+[1] Emitted 'error' event at:
+
+[1]     at emitErrorNT (net.js:1313:8)
+
+[1]     at process._tickCallback (internal/process/next_tick.js:63:19)
+
+[1]     at Function.Module.runMain (internal/modules/cjs/loader.js:744:11)
+
+[1]     at startup (internal/bootstrap/node.js:285:19)
+
+[1]     at bootstrapNodeJSCore (internal/bootstrap/node.js:739:3)
+
+AD
+Andrew · 5일 전
+Hi Martin,
+
+I know this post was 6 days ago but hopefully i can be of help if others come into the same issue.
+
+I was having the exact same error every time i tried to save my files. As far as i can tell (i may be wrong here...) it is because nodemon was not closing port 5000
+
+
+
+my solution was as follows:
+
+1. find out the PID
+
+lsof -wni tcp:5000
+
+2. kill port 5000 where [PID] = the PID
+
+kill -9 [PID]
+
+3. re-run the program
+
+npm run dev
+
+
+
+when doing this the error seems to crop up quite a few times, if this happens to yourself, try deleting node modules and running npm install again. this worked for me in this situation.
+
+
+
+Hopefully this was helpful in some way.
