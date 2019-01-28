@@ -32,7 +32,7 @@ Justin · 한 달 전
 </br>--------------------------------------------------------------------------------------------------------
 
 as below, nodemon error may occur sometimes or no errors. it's time by time</br>
-so if you get error about nodemon which says address already in use :::5000, then press enter again
+so if you get error about nodemon which says address already in use :::5000, then press ctrl + s (save again and again)
 </br>
 </br>
 </br>
