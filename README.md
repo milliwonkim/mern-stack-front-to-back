@@ -1,4 +1,4 @@
-- chapter 32
+- chapter 33
 1. update
 - App.js
 - Login.js(components/auth folder)
