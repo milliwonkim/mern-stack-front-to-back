@@ -1,4 +1,7 @@
-
+- chapter 44
+1. update
+- Login.js(components/auth)
+- App.js
 
 2.
 ![](images/login-form-functionality-1.png)
@@ -17,5 +20,10 @@
 ![](images/login-form-functionality-6.png)
 - we go to local storage, JWT token is stored in local storage. 
 ![](images/login-form-functionality-7.png)
-![](images/login-form-functionality-8.png)
 - so what will do is to remove JWT token now. and go to App.js of client and bring in that jwt-decode
+![](images/login-form-functionality-8.png)
+- once we login, it calls the login action. it's gonna store the token in local storage and it's gonna set the user
+![](images/login-form-functionality-9.png)
+![](images/login-form-functionality-10.png)
+- now when we reload, you can see "isAuthenticated" is still true, we still have the user
+
