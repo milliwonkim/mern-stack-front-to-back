@@ -24,7 +24,7 @@
 - if we are logged in, we don't need to go to landing page
 - so if i click DevConnector banner being login, then it push to '/dashboard'
 </br>----------------------------------------------------------------------------
-https://developer.fortnox.se/blog/proptypes-in-react-js/
+https://developer.fortnox.se/blog/proptypes-in-react-js/</br>
 ##PropTypes in React.js
 Joachim Bachstätter Joachim Bachstätter  17 February 2015
 
