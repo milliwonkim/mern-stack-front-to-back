@@ -25,7 +25,7 @@
 - so if i click DevConnector banner being login, then it push to '/dashboard'
 </br>----------------------------------------------------------------------------
 https://developer.fortnox.se/blog/proptypes-in-react-js/</br>
-##PropTypes in React.js
+##PropTypes in React.js##
 Joachim Bachstätter Joachim Bachstätter  17 February 2015
 
 A React.js application is created by lots of components. These components get many specific attributes, just like a HTML tag does.
