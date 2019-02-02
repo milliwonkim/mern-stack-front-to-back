@@ -1,4 +1,4 @@
-- chapter 57
+- chapter 58
 1. update
 - AddEducation.js(components/add-credentials folder)
 - profileActions.js(actions folder)
