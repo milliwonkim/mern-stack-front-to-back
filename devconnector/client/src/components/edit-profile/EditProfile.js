@@ -131,7 +131,7 @@ class CreateProfile extends Component {
             facebook: this.state.facebook,
             linkedin: this.state.linkedin,
             youtube: this.state.youtube,
-            instagram: this.state.instagram,
+            instagram: this.state.instagram
         }
 
         /**we are getting everything in the form
