@@ -110,7 +110,8 @@ class CreateProfile extends Component {
                 twitter: profile.twitter,
                 facebook: profile.facebook,
                 linkedin: profile.linkedin,
-                youtube: profile.youtube
+                youtube: profile.youtube,
+                instagram: profile.instagram
             });
         }
     }
@@ -131,7 +132,7 @@ class CreateProfile extends Component {
             facebook: this.state.facebook,
             linkedin: this.state.linkedin,
             youtube: this.state.youtube,
-            instagram: this.state.instagram,
+            instagram: this.state.instagram
         }
 
         /**we are getting everything in the form
