@@ -88,7 +88,7 @@ class CreateProfile extends Component {
                         placeholder="Linkedin Profile URL"
                         name="linkedin"
                         icon="fab fa-linkedin"
-                        value={this.state.facebook}
+                        value={this.state.linkedin}
                         onChange={this.onChange}
                         error={errors.linkedin}
                     />
