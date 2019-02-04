@@ -302,7 +302,7 @@ class CreateProfile extends Component {
                                     info="if you want your latest repos and a Github link, include your username"
                                 />
 
-                                <TextFieldGroup
+                                <TextAreaFieldGroup
                                     placeholder="Short Bio"
                                     name="bio"
                                     value={this.state.bio}
