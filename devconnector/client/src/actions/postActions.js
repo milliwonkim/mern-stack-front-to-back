@@ -122,7 +122,7 @@ export const addComment = (postId, commentData) => dispatch => {
         .post(`/api/posts/comment/${postId}`, commentData)
         .then(res =>
             dispatch({
-                type: ADD_POST,
+                type: GET_POST,
                 /**this res.data will be the actual post */
                 payload: res.data
             })
