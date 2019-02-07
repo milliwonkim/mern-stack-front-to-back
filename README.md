@@ -14,3 +14,6 @@
 ![](images/comment-display-and-delete-4.png)
 - if i submit, all the errors goes away
 - any time you see that happends where the errors are still there, just go ahead and dispatch clearErrors before you make your request 
+
+3.
+- i had trouble on deleting comments in single post. the deleting comments doesn't working. i just tried to find the problem in only client(front-end) field because these days i only focus on the front end. but the problem was on the backend. so i find the problem of leaving out parentheses in backend.
