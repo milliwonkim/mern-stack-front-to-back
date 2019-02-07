@@ -219,7 +219,7 @@ router.delete('/comment/:id/:comment_id',
     Post.findById(req.params.id)
         .then(post => {
             /**Check to see if comment exists */
-            if(post.comments.filter(comment => comment._id.toString === req.params.comment_id).length === 0){
+            if(post.comments.filter(comment => comment._id.toString() === req.params.comment_id).length === 0){
                 return res.status(404).json({ commentnotexist: 'Comment dos not exist' });
             }
             /**Get remove index */
