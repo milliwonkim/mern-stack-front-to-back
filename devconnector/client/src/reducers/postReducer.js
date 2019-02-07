@@ -20,7 +20,7 @@ export default function(state = initialState, action){
                 ...state,
                 posts: action.payload,
                 /**once that fetched, it's not loading anymore and the spinner */
-                loding: false
+                loading: false
             }
 
         case ADD_POST:
