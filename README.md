@@ -52,5 +52,5 @@ and then what happens then is it will just give you some DNS values to go put in
 ![](images/post-build-and-deployment-18.png)
 - if you wanna make this a production app where you want people to actually use it you would probably want to choose more than just a free account just to get more speed or more space or whatever.
 - with free account, if no one is actually viewing the application the server kind of winds down and then when you visit the app again, it has to spin back up and it takes a couple of seconds so it can seem a little slow to start off stuff like that
-
- **you need to check 'buildpack' to heroku/Node.js
+![](images/post-build-and-deployment-19.png)
+- you need to check 'buildpack' to heroku/Node.js
