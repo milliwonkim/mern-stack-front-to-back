@@ -1,3 +1,80 @@
+
+What used in this course
+- Heroku CLI : https://devcenter.heroku.com/articles/heroku-cli for deploying
+- Heroku : https://www.heroku.com/ for deploying
+- MLab(MongoDB Cloud) : https://mlab.com/login/ for checking MongoDB Database
+- Postman : https://www.getpostman.com/ for checking backend
+- font awesome : https://fontawesome.com/start
+- bootstrap : https://getbootstrap.com/docs/4.2/getting-started/introduction/
+- chapter 6
+  <code><pre>
+    npm init
+    npm i express mongoose passport passport-jwt jsonwebtoken body-parser bcryptjs validator
+    npm i -D nodemon
+    npm server
+    npm start
+    npm run server
+  </pre></code>
+- chapter 10
+  <code><pre>
+    npm i gravatar
+  </pre></code>
+- chapter 30
+  <code><pre>
+    npm i -g create-react-app
+    npm i -g npm
+    create-react-app client
+    cd client
+    npm start
+    npm i concurrently
+    npm run dev
+  </pre></code>
+- chapter 33
+  <code><pre>
+    cd client
+    npm i react-router-dom
+  </pre></code>
+- chapter 37
+  <code><pre>
+    cd client
+    npm i axios
+  </pre></code>
+- chapter 38
+  <code><pre>
+    npm i classnames
+  </pre></code>
+- chapter 40
+  <code><pre>
+    npm i redux react-redux redux-thunk
+  </pre></code>
+- chapter 43
+  <code><pre>
+    npm i jwt-decode
+  </pre></code>
+- chapter 59
+  <code><pre>
+    cd client
+    npm i react-moment moment
+  </pre></code>
+- chapter 76
+  <code><pre>
+    heroku
+    heroku login
+    heroku create
+    heroku git:remote -a intense-citadel-11062 (this depends on who created)
+  </pre></code>
+- chapter 77
+  <code><pre>
+    cd client
+    npm run build
+    cd ..
+    git add .
+    git commit -am 'Prepared for deploy'
+    git push heroku master
+    heroku open
+  </pre></code>
+</br>------------------------------------------------------------------------
+
 1. Introduction
   - Welcome To The Course
   - A Look At the Main App
