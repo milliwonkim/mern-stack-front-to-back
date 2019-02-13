@@ -1,3 +1,5 @@
+- backend : ~ Chapter 29
+- frontend : Chapter 30 ~ 
 
 What used in this course
 - Heroku CLI : https://devcenter.heroku.com/articles/heroku-cli for deploying
