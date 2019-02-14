@@ -5,3 +5,4 @@
 
 2. 
 ![](images/connecting-to-mongodb-with-mongoose-1.png)
+![](images/connecting-to-mongodb-with-mongoose-2.png)
