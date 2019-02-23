@@ -58,6 +58,7 @@ if(process.env.NODE_ENV === 'production'){
     /**any route that gets hit here,
      * we are just gonna load the react index.html file in build folder
      */
+    /*this code actually connect between backend and frontend*/
     app.get('*', (req, res) => {
         res.sendFile(path.resolve(__dirname, 'client', 'build', 'index.html'));
     });
